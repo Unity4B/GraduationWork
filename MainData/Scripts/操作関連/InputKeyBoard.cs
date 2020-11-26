@@ -9,6 +9,16 @@ using UnityEngine;
 /// </summary>
 public class InputKeyBoard : InputBase
 {
+	//-------------------------------------------------------------------------------
+	/// <summary>
+	/// 縦の入力値
+	/// </summary>
+	float vertical;
+	/// <summary>
+	/// 横の入力値
+	/// </summary>
+	float horizontal;
+	//-------------------------------------------------------------------------------
 	public override bool ActionKeyDown()
 	{
 		return Input.GetKeyDown(KeyCode.Return);
@@ -102,19 +112,11 @@ public class InputKeyBoard : InputBase
 
 	public override float AxisVertical()
 	{
-		//下入力なら-1
-		if (DownKeyOn()) { return -1.0f; }
-		//上入力なら+1
-		else if (UpKeyOn()) { return 1.0f; }
-		else { return 0.0f; }
+		return Input.GetAxis("Vertical");
 	}
 
 	public override float AxisHorizontal()
 	{
-		//左入力なら-1
-		if (LeftKeyOn()) { return -1.0f; }
-		//右入力なら+1
-		else if (RightKeyOn()) { return 1.0f; }
-		else { return 0.0f; }
+		return Input.GetAxis("Horizontal");
 	}
 }
