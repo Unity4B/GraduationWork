@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// 12/01 23:14 更新
 //-------------------------------------------------------------------------------
 /// <summary>
 /// コントローラー入力
@@ -106,5 +107,10 @@ public class InputController : InputBase
 	public override float AxisHorizontal()
 	{
 		return 0.0f;
+	}
+
+	public override bool ExitKeyDown()
+	{
+		return false;
 	}
 }

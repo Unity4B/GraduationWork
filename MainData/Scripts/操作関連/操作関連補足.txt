@@ -1,0 +1,21 @@
+InputManager 	空オブジェクトにしてアタッチする
+
+
+InputBase	入力基礎クラス（これを継承して操作関連を作れます）※アタッチする必要なし
+InputKeyBoard	キーボード操作　※アタッチする必要なし
+InputController	コントローラー操作 ※アタッチする必要なし
+
+SingletonClass	必須クラス
+
+記述方法
+InputManager.Instance.input.～　選ぶメソッドによって入力をとれる
+
+操作系統の入れ替えができます。
+input = new InputKeyBoard();
+      = new InputController();
+
+
+Ver1.03 操作関連説明
+
+Ver1.02:水平、垂直方向の入力を数値で受け取れるようにしました。
+Ver1.03:Exitを用意しました。

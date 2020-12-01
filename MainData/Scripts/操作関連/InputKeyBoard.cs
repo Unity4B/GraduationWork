@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// 11/21 12:50 更新
+// 12/01 23:14 更新
 //-------------------------------------------------------------------------------
 /// <summary>
 /// キーボード入力
@@ -119,4 +119,10 @@ public class InputKeyBoard : InputBase
 	{
 		return Input.GetAxis("Horizontal");
 	}
+
+	public override bool ExitKeyDown()
+	{
+		return Input.GetKeyDown(KeyCode.Escape);
+	}
+
 }

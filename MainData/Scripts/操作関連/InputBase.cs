@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// 11/21 12:50 更新
+// 12/01 23:14 更新
 //-------------------------------------------------------------------------------
 /// <summary>
 /// 入力基礎クラス
@@ -129,5 +129,11 @@ public abstract class InputBase
 	/// </summary>
 	/// <returns></returns>
 	abstract public bool JumpKeyDown();
+	//-------------------------------------------------------------------------------
+	/// <summary>
+	/// ゲーム終了入力
+	/// </summary>
+	/// <returns></returns>
+	abstract public bool ExitKeyDown();
 	//-------------------------------------------------------------------------------
 }
