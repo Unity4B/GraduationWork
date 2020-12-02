@@ -1,0 +1,4 @@
+tilemap は　resourceないのimageのunit調整をしてから使ってください
+
+imageは64×64
+　　　 32×32
