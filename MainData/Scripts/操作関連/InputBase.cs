@@ -125,6 +125,13 @@ public abstract class InputBase
 	abstract public float AxisHorizontal();
 	//-------------------------------------------------------------------------------
 	/// <summary>
+    /// 伊東　12/2　追加
+	/// 水平方向の入力値
+	/// </summary>
+	/// <returns></returns>
+	abstract public float CurveHorizontal();
+	//-------------------------------------------------------------------------------
+	/// <summary>
 	/// ジャンプ入力
 	/// </summary>
 	/// <returns></returns>

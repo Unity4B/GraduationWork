@@ -119,10 +119,14 @@ public class InputKeyBoard : InputBase
 	{
 		return Input.GetAxis("Horizontal");
 	}
+	//伊東　12/2　追加
+	public override float CurveHorizontal()
+	{
+		return Input.GetAxisRaw("Horizontal");
+	}
 
 	public override bool ExitKeyDown()
 	{
 		return Input.GetKeyDown(KeyCode.Escape);
 	}
-
 }

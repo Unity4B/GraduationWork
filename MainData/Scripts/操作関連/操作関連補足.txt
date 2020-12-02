@@ -15,7 +15,8 @@ input = new InputKeyBoard();
       = new InputController();
 
 
-Ver1.03 操作関連説明
+Ver1.04 操作関連説明
 
 Ver1.02:水平、垂直方向の入力を数値で受け取れるようにしました。
 Ver1.03:Exitを用意しました。
+Ver1.04:反応曲線を用意した。

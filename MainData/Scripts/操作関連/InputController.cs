@@ -108,6 +108,11 @@ public class InputController : InputBase
 	{
 		return 0.0f;
 	}
+	//伊東　12/2　追加
+	public override float CurveHorizontal()
+	{
+		return 0.0f;
+	}
 
 	public override bool ExitKeyDown()
 	{
