@@ -1,0 +1,17 @@
+SoundManager 音源管理クラス・音源格納クラス
+
+SoundController	音源再生基礎クラス	※アタッチ必要なし
+BGMController	BGM再生クラス（ループ）
+SEController	SE再生クラス
+
+記述方法
+BGMController.Instance.Play(文字列)	※文字列はSoundManagerに登録した音源名
+
+その他、引数についてはマウスカーソルなどを合わせればわかります。
+
+音源使用方法
+1．SoundManagerのインスペクターで使いたい音源名を追加記述する。
+2．登録した音源名と同じ名前の音源ファイルをResources/Sound/に入れる。
+3．鳴らしたい部分で関数を呼び出し、音源名を使いたい登録した音源名にする。
+
+以上です。
